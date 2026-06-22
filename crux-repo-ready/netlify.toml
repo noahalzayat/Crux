@@ -1,0 +1,8 @@
+[build]
+  functions = "netlify/functions"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy = "default-src * 'unsafe-inline' 'unsafe-eval' data: blob:; connect-src *;"
+    Access-Control-Allow-Origin = "*"
